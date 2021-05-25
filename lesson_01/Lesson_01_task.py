@@ -64,7 +64,7 @@ class ParseCategories(Parse5ka):
             products = self._parse(f"{self.start_url}?categories={category['parent_group_code']}")
             list_of_products = []
             for product in products:
-                list_of_products.append(product['id'])
+                list_of_products.append(product)
 
             data = {
                 "name": category['parent_group_name'],
